@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Users\Jona\Desktop\mercadoLiebre\\public\css">
+  <title>Mercado Liebre</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="preconectar" href="https://fonts.googleapis.com">
+  <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+
+</head>
+
+<body>
+  <header>
+      <div class="top-header">
+          <div class="logo"> 
+              <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+          </div>
+          <div class="form" action="#" method="GET">
+              <div class="input">Buscar productos, marcas y más</div>
+              <div class="submit"><i class="fa fa-search"></i></div>
+          </div>
+          <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+      </div>
+      <nav>
+          <ul class="list-header">
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="#">Tiendas Oficiales</a></li>
+              <li><a href="#">Vender</a></li>
+              <li><a href="#">Ayuda</a></li>
+          </ul>
+          <ul>
+              <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+              <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+              <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+          </ul>
+      </nav>
+      <div class="burger-menu">
+          <i class="fa fa-bars burger"></i>
+      </div>
+  </header>
+  <section class="banner">
+      <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
+  </section>
+  
+  <main>
+      <form action="/register" method="POST">
+        
+    
+        <h5>Crea tu cuenta</h5>
+      
+    <p>  <label>Nombre y apellido:</label>
+      <input type="text" name="nombre apellido" required>
+    </p>
+    <p>
+      <label>Nombre de usuari@:</label>
+      <input type="text" name="nombre de usuario" required>
+    </p>
+    <p>
+      <label>Fecha de nacimiento:</label>
+      <input type="date" name="fecha de nacimiento" required>
+    </p>
+    <p>
+      <label>Domicilio:</label>
+      <input type="text" name="Domicilio" placeholder="calle y numero" required>
+    </p>
+    <p>
+      <label>Perfil del usuari@:</label>
+      <input type="text" name="Comprar o Vender" placeholder="¿Quieres comprar o vender?" required>
+    </p>
+  </div>
+
+  <h4>Intereses</h4>
+  <div class="interests">
+      <div>
+          <input type="checkbox" name="interests" value="a" id="a">
+          <label for="a">Electro</label>
+      </div>
+      <div>
+          <input type="checkbox" name="interests" value="b" id="b">
+          <label for="b">Moda</label>
+      </div>
+      <div>
+          <input type="checkbox" name="interests" value="c" id="c">
+          <label for="c">Hogar</label>
+      </div>
+      <div>
+          <input type="checkbox" name="interests" value="d" id="d">
+          <label for="d">Juguetería</label>
+      </div>
+      <div>
+          <input type="checkbox" name="interests" value="e" id="e">
+          <label for="e">Vida sana</label>
+      </div>
+  </div>
+    <h4>Elige tu foto de Perfil</h4>
+                <input type="file" name="foto de Perfil" accept="images/png, images/jpg">
+
+    <p>
+      <label>E-mail:</label>
+      <input type="email" name="email" required>
+    </p>
+    <p>
+                
+                <input name="password" type="password" value="" class="form-control" id="elige contraseña" placeholder="Elige tu contraseña">
+                
+                <input name="password" type="password" value="" class="form-control" id="confirmar contraseña" placeholder="Confirma tu contraseña">
+  </p>
+   <p> <input type="submit" value="Enviar">
+    <input type="reset" value="Cancelar"></p>
+  </main>
+  <footer>
+     
+
+
+
+
+
+  </footer>
+  
+</body>
+
+</html>
