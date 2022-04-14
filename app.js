@@ -10,7 +10,7 @@ const publicPath = path.resolve(__dirname, "./public");
  recurso de archivos estaticos para que siempre los podamos consumir de manera sencilla*/
  app.use(express.static(publicPath) );
 
- app.listen(3100, () => {
+ app.listen(process.env.PORT || 3100, () => {
      console.log("servidor corriendo en el puerto http://localhost:3100")
  });
  app.get("/", (req, res)=> {

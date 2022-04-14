@@ -191,19 +191,22 @@ article div.main-article {
 article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
-.contenedor-padre{ 
-    width: 600px;
-    height: 400px;
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
+
 .card,
 .regalo,
 .seguridad {
     text-align: center;
 
+
+}
+
+.contenedor-padre {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 @media (min-width: 361px) {
@@ -240,44 +243,45 @@ article:hover {
 
         list-style-type: none;
     }
+
     .login-page {
         width: 360px;
         border-radius: 0%;
         margin: auto;
-      }
-      
-
-@media (min-width: 769px) {
-    main section div.products article {
-        width: 22%;
     }
 
-    .papa-de-los-list {
 
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
+    @media (min-width: 769px) {
+        main section div.products article {
+            width: 22%;
+        }
 
+        .papa-de-los-list {
+
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        .list-izquierdo {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            column-gap: 8em;
+
+
+        }
+
+        .list-derecho {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            column-gap: 8em;
+            padding-right: 15px;
+        }
     }
-
-    .list-izquierdo {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        column-gap: 8em;
-
-
-    }
-
-    .list-derecho {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        column-gap: 8em;
-        padding-right: 15px;
-    }
-}
 }
