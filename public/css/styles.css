@@ -177,7 +177,10 @@ main section h3 {
 div.main-article:hover i {
     transform: rotate(-90deg);
 }
-
+.caja-login {
+    display: flex;
+    justify-content: center;
+}
 article div.main-article {
     width: 100%;
     display: flex;
@@ -194,19 +197,32 @@ article:hover {
 
 .card,
 .regalo,
-.seguridad {
+.seguridad{
     text-align: center;
-
-
+    width: 20%;
 }
 
+
 .contenedor-padre {
-    width: 600px;
     height: 400px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+
+}
+.card i:hover{
+    color:#0044AA
+}
+.regalo i:hover{
+    color:#0044AA
+}
+.seguridad i:hover{
+    color:#0044AA
+}
+.cierre{
+    margin-left: 2rem;
+    margin-bottom: 4rem;
 }
 
 @media (min-width: 361px) {
@@ -245,9 +261,14 @@ article:hover {
     }
 
     .login-page {
+        display:flex;
+        justify-content:center;
+        padding:1rem;
         width: 360px;
         border-radius: 0%;
-        margin: auto;
+        
+        background-color:grey;
+        margin: 2rem;
     }
 
 
